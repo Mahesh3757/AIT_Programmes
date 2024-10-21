@@ -1,0 +1,37 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-demo',
+  template: `
+    <!-- *ngIf Directive -->
+    <div *ngIf="showContent">
+      <h2>Welcome!</h2>
+      <p>This content is visible because showContent is true.</p>
+    </div>
+
+    <!-- *ngFor Directive -->
+    <div>
+      <h2>Users</h2>
+      <ul>
+        <li *ngFor="let user of users">{{ user.name }}</li>
+      </ul>
+    </div>
+
+    <!-- *ngSwitch Directive -->
+    <div [ngSwitch]="color">
+      <p *ngSwitchCase="'red'">Red</p>
+      <p *ngSwitchCase="'blue'">Blue</p>
+      <p *ngSwitchCase="'green'">Green</p>
+      <p *ngSwitchDefault>Invalid color</p>
+    </div>
+  `
+})
+export class DemoComponent {
+  showContent = true;
+  users = [
+    { id: 1, name: 'John' },
+    { id: 2, name: 'Alice' },
+    { id: 3, name: 'Bob' }
+  ];
+  color = 'red';
+}

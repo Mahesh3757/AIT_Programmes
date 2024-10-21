@@ -1,0 +1,101 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes Demo</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Pseudo-classes */
+        /* Link states */
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: green;
+        }
+
+        /* First child */
+        ul li:first-child {
+            font-weight: bold;
+        }
+
+        /* Last child */
+        ul li:last-child {
+            color: #888;
+        }
+
+        /* Even and odd */
+        ul li:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        ul li:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        /* Empty */
+        ul:empty {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pseudo-classes Demo</h1>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+            <li>Fourth item</li>
+            <li>Fifth item</li>
+            <li>Sixth item</li>
+            <li>Seventh item</li>
+            <li>Eighth item</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Empty List</h1>
+        <ul></ul>
+    </div>
+    <div class="container">
+        <h1>Links</h1>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

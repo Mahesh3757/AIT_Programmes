@@ -1,0 +1,57 @@
+<html>
+    
+    <head>
+        <title>Examination Form</title>
+        <style>
+            body
+            {
+                text-align: center;
+            }
+            form
+            {
+                border: 2px solid black;
+                background-color: burlywood;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 2cm;
+                padding-left:10%;
+                padding-right: 10%;
+                border-style: double;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <form action="" method="POST">
+            <h2>University Examination Form </h2>
+            <h3>Sinhgad Institute of Management - MCA, Pune</h3>
+            Student Name : 
+            <input type="text" name="name" >
+            <br><br>
+            PRN No : 
+            <input type="text" name="r_no">
+            <br><br>
+            Gender :  <input type="radio" name="Gender">
+                        <label for="Male">Male</label>
+                       <input type="radio" name="Gender" >
+                       <label for="Female">Female</label>
+            <br><br>
+           Department : <select name="Department" id="Dept">Department
+            <option value="mca">MCA</option>
+            <option value="mba">MBA</option>
+            <option value="bca">BCA</option>
+            <option value="bba">BBA</option>
+            
+        </select>
+        <br><br>
+
+        Year : <select name="Year" id="yr">
+            <option value="fy">1st</option>
+            <option value="sy">2nd</option>
+            <option value="ty">3rd</option>
+        </select>
+        <br><br>
+
+        </form>
+    </body>
+</html>

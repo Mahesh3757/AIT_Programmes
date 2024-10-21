@@ -1,0 +1,17 @@
+<html>
+
+    <canvas id="my_canvas" width="400px" height="300px" style="border: double red ;"></canvas>
+        <script type="text/javascript">
+            var c= gd.getElementById("my_canvas");
+            var ctx=c.getContext("2d");
+            ctx.rect(50,50,300,200);
+
+            var gd=ctx.createLinearGradient(0,150,400,150);
+            gd.addColorStop(0,"red");
+            gd.addColorStop(0.5,"green");
+            gd.addColorStop(1,"blue");
+            ctx.fillStyle=gd;
+            ctx.fill();
+        </script>
+
+</html>
